@@ -3,7 +3,7 @@
   src: url('../fonts/TitilliumWeb-SemiBold.ttf');
 }
 
-body {
+ body {
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,9 @@ body {
   align-items: center;
 }
 
-h1, h2 {
+/* h1, h2 {
   color: #93005a;
-}
+} */
 
 #root {
   width: 100%;

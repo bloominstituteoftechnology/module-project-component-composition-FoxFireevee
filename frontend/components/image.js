@@ -1,4 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+        color: ${pr => pr.theme.secondaryColor};
+        border: 1px solid red;
+`
 
 export default function image(props) {
     const { data } = props;
@@ -32,9 +38,11 @@ export default function image(props) {
 
     console.log(pastDates);
 
+
+
     console.log(data)
     return (
-        <div className='centered'>
+        <StyledDiv className='centered'>
             <select>
                 <option selected disabled hidden>Select a Different Day!</option>
                 {
@@ -50,7 +58,7 @@ export default function image(props) {
             <img src={data.url} />
             <h3>Shout out to {data.copyright} for this out of this world photo!</h3>
             <p>{data.explanation}</p>
-        </div>
+        </StyledDiv>
     )
 }  
 
