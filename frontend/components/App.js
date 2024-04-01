@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 
-import Images from "./images";
+import Image from "./image";
 
 export default function App() {
   const [data, setData] = useState("");
@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div>
-      <Images data={data}/>
+      <Image data={data}/>
     </div>
   )
 }
